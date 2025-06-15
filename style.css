@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2% 15%;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 23px;
+}
+
+.links ul {
+  display: flex;
+  gap: 40px;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: black;
+  flex-shrink: 0;
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  transform: scale(1.1);
+}
+
+/* Hero-section* */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 50px 0 50px;
+}
+
+.hero-section img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-section .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.hero-section .intro {
+  font-size: 15px;
+  font-weight: 500;
+  /* padding-top: 30px; */
+}
+
+.hero-section .name {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.hero-section .profession {
+  font-size: 25px;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.buttons .btn-cv,
+.btn-contact {
+  padding: 15px 30px;
+  border-radius: 100px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.buttons .btn-cv {
+  background-color: transparent;
+  margin-right: 20px;
+  border: 1px solid grey;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.buttons .btn-cv:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.buttons .btn-contact {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.buttons .btn-contact:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.icon-links {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.icon-links div {
+  transition: 0.3s;
+}
+
+.icon-links div:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 786px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body {
+    padding: 2% 4%;
+  }
+
+  .logo {
+    font-size: 13px;
+  }
+
+  .links ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .links ul li {
+    list-style: none;
+  }
+
+  .links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+}
