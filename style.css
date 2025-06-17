@@ -332,7 +332,8 @@ nav {
   }
 
   .experience-deatails-one,
-  .experience-deatails-two h3 {
+  .experience-deatails-two h3,
+  p {
     font-size: 13px;
   }
 
