@@ -397,6 +397,10 @@ nav {
   }
 
   /* Experience-section */
+
+  #experience {
+    padding: 2% 5%;
+  }
   .experience-container {
     display: flex;
     flex-direction: column;
