@@ -62,7 +62,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 20px 20%;
 }
 
@@ -150,7 +150,77 @@ nav {
   transform: scale(1.2);
 }
 
+/* <!-- About Section: --> */
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-intro {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-intro p {
+  color: gray;
+}
+
+.about-intro h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about-details {
+  display: flex;
+  gap: 50px;
+}
+
+.experience-details {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 50px;
+}
+
+.about-details img {
+  height: 400px;
+  width: 400px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.experience-deatails-one,
+.experience-deatails-two {
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 20px 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.experience-deatails-two:hover {
+  transform: scale(1.2);
+}
+
+.experience-deatails-one:hover {
+  transform: scale(1.1);
+}
+
+.about-icon {
+  font-size: 25px;
+}
+
 @media (max-width: 768px) {
+  /* Navbar */
   .logo {
     font-size: 15px;
     margin-top: 15px;
@@ -171,6 +241,8 @@ nav {
   .links a {
     font-size: 12px;
   }
+
+  /* Hero-section */
 
   .hero-section {
     display: flex;
@@ -217,6 +289,54 @@ nav {
 
   .icon-links {
     margin-top: 10px;
+    font-size: 18px;
+  }
+
+  /* <!-- About Section: --> */
+
+  .about {
+    padding: 2% 5%;
+  }
+
+  .about img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-intro h2 {
+    font-size: 20px;
+  }
+
+  .about-details {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .experience-details {
+    display: flex;
+    gap: 10px;
+  }
+
+  .experience-details-text p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .experience-deatails-one,
+  .experience-deatails-two {
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    /* padding: 5px 5px; */
+  }
+
+  .experience-deatails-one,
+  .experience-deatails-two h3 {
+    font-size: 13px;
+  }
+
+  .about-icon {
     font-size: 18px;
   }
 }
