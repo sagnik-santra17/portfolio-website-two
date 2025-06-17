@@ -419,4 +419,8 @@ nav {
     height: 200px;
     padding-bottom: 60px;
   }
+
+  .texts p {
+    margin-left: 23px;
+  }
 }
