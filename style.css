@@ -152,9 +152,10 @@ nav {
 
 /* <!-- About Section: --> */
 
-.about {
-  max-width: 1000px;
+#about {
+  /* max-width: 1300px; */
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .about-intro {
@@ -207,10 +208,7 @@ nav {
   cursor: pointer;
 }
 
-.experience-deatails-two:hover {
-  transform: scale(1.2);
-}
-
+.experience-deatails-two:hover,
 .experience-deatails-one:hover {
   transform: scale(1.1);
 }
@@ -218,6 +216,63 @@ nav {
 .about-icon {
   font-size: 25px;
 }
+
+/* <!-- Experience section --> */
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.web-dev,
+.writing {
+  display: flex;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+  flex-direction: column;
+  /* padding: 50px; */
+  width: 500px;
+  height: 250px;
+  align-items: center;
+  padding: 50px 0;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.web-dev:hover,
+.writing:hover {
+  transform: scale(1.02);
+}
+
+.web-dev-skills,
+.writing-skills {
+  display: flex;
+  gap: 30px;
+}
+.texts h2 {
+  color: grey;
+  text-align: center;
+}
+
+.texts p {
+  margin-left: 29px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left i,
+.right i {
+  margin-right: 10px;
+}
+
+/* Media-querry */
 
 @media (max-width: 768px) {
   /* Navbar */
@@ -294,11 +349,11 @@ nav {
 
   /* <!-- About Section: --> */
 
-  .about {
+  #about {
     padding: 2% 5%;
   }
 
-  .about img {
+  #about img {
     height: 150px;
     width: 150px;
   }
@@ -339,5 +394,25 @@ nav {
 
   .about-icon {
     font-size: 18px;
+  }
+
+  /* Experience-section */
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .texts p,
+  h3 {
+    font-size: 13px;
+  }
+
+  .web-dev,
+  .writing {
+    width: 380px;
+    height: 200px;
+    padding-bottom: 60px;
   }
 }
